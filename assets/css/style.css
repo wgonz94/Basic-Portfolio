@@ -1,7 +1,10 @@
  /* This is the structure for the "About me" HTML,
     but it also acts as basic structure for other HTMLS*/
  body {
-    background: #ededed;
+    background-color: #ededed;
+    height: auto;
+    width: auto;
+    margin: 0px;
   }
 
   
@@ -14,9 +17,9 @@
     height: 75px;
     text-align: center; 
     display: inline-block;
-    
-   
+    position: fixed-top;
   }
+
    a.directory {
     color: #777777;
     margin-left: 20px;
@@ -46,6 +49,7 @@
     border:solid  #dddddd;  
     background: #ffffff;
     margin-left: 20%;
+    overflow: auto;
   }
  
   h2 {
@@ -74,8 +78,6 @@
       font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
       font-size: 12pt;
       text-align: left;
-      
-      
         }
 
  footer {
@@ -87,6 +89,8 @@
     width: 100%;
     margin-top: 750px;
     line-height: 25px;
+    overflow: hidden;
+    
     }
 
     /* The "Portfolio" HTML/CSS Section*/
@@ -163,7 +167,7 @@
   }
 
   .out-box{
-    margin-left:15%;
+    margin-left:17%;
     margin-bottom: 20px;
     width: 200px;
     height: 200px;
@@ -173,13 +177,14 @@
 
   #outside{
     position: absolute;
+    overflow: hidden;
   }
 
   /*Section for Contact Information Page*/
 
 
   #aboutme{
-    margin-left: 25.5px;
+    margin-left: 25px;
 
   }
 #outside2{
@@ -188,6 +193,7 @@
     border:solid  #dddddd;  
     background: #ffffff;
     margin-left: 20%;
+    overflow: hidden;
   }
 
   h4{
@@ -226,3 +232,35 @@
       line-height: 25px;
       
   }
+
+  @media screen and (max-width: 980px) {
+    .mynameSpace{
+      float: left;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    header{
+      width: 100%;
+      
+    }
+    .mynameSpace{
+      float: left;
+    }
+    #outside{
+      width: 100%;
+    }
+    
+    
+  }
+
+  @media screen and (max-width:640px) {
+    .mynameSpace{
+      float: left;
+    }
+    
+  }
+
+ 
+
+ 
